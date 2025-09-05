@@ -1,5 +1,5 @@
 .main-header {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: #f44336;
   color: white;
   padding: 1rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -17,14 +17,26 @@
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+}
+
+.logo-svg {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
 .logo h2 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(45deg, #00d4ff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
 }
 
 .nav-menu {
@@ -41,7 +53,7 @@
 }
 
 .nav-menu a:hover {
-  color: #00d4ff;
+  color: #ff5722;
 }
 
 .nav-menu a::after {
@@ -51,7 +63,7 @@
   height: 2px;
   bottom: -5px;
   left: 0;
-  background: linear-gradient(45deg, #00d4ff, #0099cc);
+  background: #ff5722;
   transition: width 0.3s ease;
 }
 

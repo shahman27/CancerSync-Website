@@ -12,7 +12,7 @@ body {
 
 .App {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #e3f2fd;
   position: relative;
   overflow-x: hidden;
 }
@@ -25,9 +25,8 @@ body {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(0, 153, 204, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(102, 126, 234, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(244, 67, 54, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 87, 34, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -42,22 +41,16 @@ body {
 
 .hero-section {
   text-align: center;
-  color: white;
+  color: #333;
   max-width: 800px;
   padding: 2rem;
-  animation: fadeInUp 1s ease-out;
 }
 
 .company-name {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #00d4ff, #ffffff, #00d4ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
-  animation: glow 2s ease-in-out infinite alternate;
+  color: #f44336;
 }
 
 .tagline {
@@ -71,19 +64,18 @@ body {
 .coming-soon {
   margin-top: 3rem;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(244, 67, 54, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .coming-soon h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #00d4ff;
+  color: #ff5722;
   font-weight: 700;
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
 }
 
 .coming-soon p {
@@ -94,25 +86,6 @@ body {
   margin: 0 auto;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-  }
-  to {
-    text-shadow: 0 0 30px rgba(0, 212, 255, 0.6), 0 0 40px rgba(0, 212, 255, 0.3);
-  }
-}
 
 @media (max-width: 768px) {
   .company-name {
